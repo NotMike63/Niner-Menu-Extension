@@ -40,15 +40,52 @@
           "name": "Niner File Explorer"
         },
         {
-          "id": "menu-title",
+          "id": "2214-menu-window",
           "name": "2214 Commands"
+        },
+        {
+          "id": "niner-test-window",
+          "name": "Niner Tests"
         }
       ]
-    }
+    },
+    "menus" : {
+      "view/item/context": [
+
+      {
+        "command": "workbench.action.files.newUntitledFile",
+        "title": "Create a New Project"
+      },
+      {
+        "command": "workbench.action.files.newFolder",
+        "title": "Create a New Folder"
+      },
+      {
+        "command": "workbench.action.files.newUntitledFile",
+        "title": "Create a New File"
+      },
+      {
+        "command": "java.test.editor.run",
+        "title": "Run Tests"
+      },
+      {
+        "command": "workbench.action.debug.run",
+        "title": "Run Code"
+      },
+      {
+        "command": "workbench.action.debug.stop",
+        "title": "Stop Code"
+      },
+      {
+        "command": "workbench.action.newWindow",
+        "title": "New Window"
+      },
+      {
+        "command": "workbench.action.terminal.new",
+        "title": "New Terminal"
+      }
+    ]
   },
-
-
-  
   "scripts": {
     "vscode:prepublish" : "npm run compile",
     "compile": "tsx -p ./",
@@ -66,4 +103,5 @@
     "@vscode/test-cli": "^0.0.9",
     "@vscode/test-electron": "^2.4.0"
   }
+}
 }
