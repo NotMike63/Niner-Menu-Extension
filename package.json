@@ -10,33 +10,49 @@
     "Other"
   ],
   "activationEvents": [
-    "onLanguage"
+    "onLanguage:Java"
   ],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "niner-menus.helloWorld",
-      "title": "Menu"
-    }],
+    "commands": [
+      {
+        "command": "niner-menus.downloadJars",
+        "title": "Download Jars for 2214"
+      },
+      {
+        "command": "niner-menus.createProject",
+        "title": "Create New 2214 Project"
+      }
+    ],
     "viewsContainers": {
       "activitybar": [
         {
-          "id" : "niner-menus",
-          "title" : "Niner Menus",
-          "icon" : "Niners.svg"
+          "id": "niner-menus",
+          "title": "Niner Menu",
+          "icon": "media/Niners.svg"
         }
       ]
     },
     "views": {
       "niner-menus": [
         {
-          "id" : "menu-title",
-          "name" : "2214 Commands"
+          "id": "niner-file-explorer",
+          "name": "Niner File Explorer"
+        },
+        {
+          "id": "menu-title",
+          "name": "2214 Commands"
         }
       ]
     }
   },
+
+
+  
   "scripts": {
+    "vscode:prepublish" : "npm run compile",
+    "compile": "tsx -p ./",
+    "watch": "tsc -watch -[ ./",
     "lint": "eslint .",
     "pretest": "npm run lint",
     "test": "vscode-test"
