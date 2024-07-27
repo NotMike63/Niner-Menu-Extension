@@ -16,7 +16,7 @@
   "contributes": {
     "commands": [
       {
-        "command": "niner-menus.downloadJars",
+        "command": "niner-menus.download2214Jars",
         "title": "Download Jars for 2214"
       },
       {
@@ -54,7 +54,8 @@
 
       {
         "command": "workbench.action.files.newUntitledFile",
-        "title": "Create a New Project"
+        "title": "Create a New Project",
+        "when": "explorerViewletVisible"
       },
       {
         "command": "workbench.action.files.newFolder",
@@ -66,7 +67,8 @@
       },
       {
         "command": "java.test.editor.run",
-        "title": "Run Tests"
+        "title": "Run Tests",
+        "when": "resource =~ /.*Test\\.java$/"
       },
       {
         "command": "workbench.action.debug.run",

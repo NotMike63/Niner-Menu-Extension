@@ -24,28 +24,31 @@ For example:
 
 This extension contributes the following settings:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.2214`: Set to `2214` to turn on menus for 2214.
+* `niner-menus.download2214Jars`: Downloads all necessary .jar files for ITSC 2214 at UNCC.
+* `niner-menus.createProject2214`: Creates a project according to the UNCC ITSC 2214 specifications.
+* `niner-menus.createFile2214`: Creates a new file according to the UNCC ITSC 2214 Specifications.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Context menu not appearing when clicking on nothing in extensions Niner File Explorer.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of NinerMenu with support for 2214 Menu shortcuts.
+Initial release of NinerMenu with support for Niner File Explorer.
 
 ### 1.0.1
 
-Fixed issue #.
+Niner File Explorer wasn't always detecting files, switched package.json config to activate Niner File Explorer only when 
 
 ### 1.1.0
 
-Added features X, Y, and Z.
+Added context menu to Niner File Explorer, added layout for Niner Testing and Niner Menu. No actual implementation added.
+
+### 1.1.1
+
+Niner Menu now contains working buttons. Context menu is completely working with Command Palette.
 
 ---
 
