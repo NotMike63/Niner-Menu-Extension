@@ -1,0 +1,37 @@
+{
+	"Method template": {
+		"prefix": "/newmethod",
+		"body": [
+			"/**",
+			" * TODO: give a brief description of what the method does",
+			" * @author TODO: put name here",
+			" * @param TODO: give brief description of any parameters",
+			" * @return TODO: give a brieg description for any return values",
+			" * @exception TODO: List any exceptions this method throws  ",
+			" */",
+			"public void methodName()",
+			"{",
+			"  // TODO: fill in logic here",
+			"}"
+		],
+		"description": "Create a new method template"
+	},
+	"Test Method template": {
+		"prefix": "/newtest",
+		"body": [
+			"/**",
+			" * TODO: give a brief description of what the method does",
+			" * @author TODO: put name here",
+			" * @param TODO: give brief description of any parameters",
+			" * @return TODO: give a brief description for any return values",
+			" * @exception TODO: List any exceptions this method throws  ",
+			" */",
+			"@Test",
+			"public void methodName()",
+			"{",
+			"   // fill in logic here",
+			"}"
+		],
+		"description": "Create a new Test method template"
+	}
+}

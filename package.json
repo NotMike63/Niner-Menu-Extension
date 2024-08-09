@@ -14,6 +14,12 @@
   ],
   "main": "./extension.js",
   "contributes": {
+    "snippets": [
+      {
+        "language" : "java",
+        "path": "./lib/snippets.json"
+      }
+    ],
     "commands": [
       {
         "command": "niner-menus.downloadJars",
@@ -24,6 +30,9 @@
         "title": "Create New 2214 Project"
       }
     ],
+    "configuration": {
+      "title" : "oliver-ni.web-cat-vscode"
+    },
     "viewsContainers": {
       "activitybar": [
         {
