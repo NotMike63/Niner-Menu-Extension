@@ -33,13 +33,6 @@ function activate(context) {
 		vscode.window.showInformationMessage('Hello vsCode!');
 	});
 	context.subscriptions.push(disposable);
-
-	//need to fetch URI
-	const temp = vscode.commands.registerCommand('niner-menus.downloadJars', function(){
-		vscode.commands.executeCommand("")
-	});
-	context.subscriptions.push(temp);
-
 }
 
 class FileSystemProvider {

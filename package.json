@@ -59,8 +59,13 @@
       ]
     },
     "menus" : {
+      "explorer/context": [
+        {
+          "command" : "workbench.action.files.newUntitleFile",
+          "title" : "Rando"
+        }
+      ],
       "view/item/context": [
-
       {
         "command": "workbench.action.files.newUntitledFile",
         "title": "Create a New Project",
